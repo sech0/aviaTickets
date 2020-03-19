@@ -10,6 +10,7 @@ class FormUI {
     this.destination = document.querySelector("#autocomplete-destination");
     this.depart = document.querySelector("#datepicker-depart");
     this.return = document.querySelector("#datepicker-return");
+    
     this.originAutocomplete = autocompleteInstance(this.origin);
     this.destinationAutocomplete = autocompleteInstance(this.destination);
     this.departDatePicker = datePickerInstance(this.depart);

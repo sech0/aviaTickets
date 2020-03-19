@@ -37,7 +37,7 @@ class TicketsUI {
   static emptyMsgTemplate() {
     return `
     <div class="tickets-empty-res-msg">
-       По вашему запросу билетов не найдено.
+      No tickets were found upon your request.
     </div>
     `;
   }

@@ -47,7 +47,6 @@ class Locations {
   }
 
   createShortCities(cities) {
-    // { 'City, Country' : null }
     return Object.entries(cities).reduce((acc, [, city]) => {
       acc[city.full_name] = null;
       return acc;
@@ -55,7 +54,6 @@ class Locations {
   }
 
   serializeCountries(countries) {
-    // { 'Country code' : {...} }
     return countries.reduce((acc, country) => {
       acc[country.code] = country;
       return acc;
@@ -63,7 +61,6 @@ class Locations {
   }
 
   serializeCities(cities) {
-    // { 'City name, Country code' : {...} }
     return cities.reduce((acc, city) => {
       const country_name = this.countries[city.country_code].name;
       city.name = city.name || city.name_translations.en;
